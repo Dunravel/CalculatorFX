@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CalculatorView">
+   <children>
+      <Label fx:id="count_label" alignment="TOP_RIGHT" layoutX="57.0" layoutY="43.0" prefHeight="20.0" prefWidth="143.0" text="0" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button fx:id="button_add" layoutX="224.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#onAddButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Add" />
+      <Button layoutX="224.0" layoutY="113.0" mnemonicParsing="false" onMouseClicked="#onSubButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Substract" />
+      <GridPane layoutX="64.0" layoutY="89.0" prefHeight="142.0" prefWidth="143.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="button_one" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#onOneButtonClicked" text="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#onFourButtonClicked" text="4" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#onSevenButtonClicked" text="7" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onMouseClicked="#onTwoButtonClicked" text="2" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#onThreeButtonClicked" text="3" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onMouseClicked="#onFiveButtonClicked" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#onSixButtonClicked" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#onEightButtonClicked" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onMouseClicked="#onNineButtonClicked" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onMouseClicked="#onZeroButtonClicked" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button layoutX="224.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#onCalculateButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Calculate" />
+      <Button fx:id="button_multiply" layoutX="224.0" layoutY="138.0" mnemonicParsing="false" onMouseClicked="#onMultiplyButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Multiply" />
+      <Button fx:id="button_divide" layoutX="224.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#onDivideButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Divide" />
+      <Button fx:id="clear_button" layoutX="224.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#onClearButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Clear" />
+   </children>
+</Pane>
