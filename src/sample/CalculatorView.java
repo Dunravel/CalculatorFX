@@ -11,22 +11,22 @@ public class CalculatorView implements CalculatorMVC.View{
 
     @FXML
     public void onAddButtonClicked(){
-        controller.addOperation();
+        controller.operation(Operation.ADD);
     }
 
     @FXML
     public void onSubButtonClicked(){
-        controller.subOperation();
+        controller.operation(Operation.SUBSTRACT);
     }
 
     @FXML
     public void onMultiplyButtonClicked(){
-        controller.multiplyOperation();
+        controller.operation(Operation.MULTIPLY);
     }
 
     @FXML
     public void onDivideButtonClicked(){
-        controller.divideOperation();
+        controller.operation(Operation.DIVIDE);
     }
     @FXML
     public void onCalculateButtonClicked(){

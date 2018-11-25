@@ -8,12 +8,7 @@ public interface CalculatorMVC {
     }
 
     interface  Controller{
-        void addOperation();
-        void subOperation();
-
-        void multiplyOperation();
-
-        void divideOperation();
+        void operation(Operation operation);
 
         void result();
 

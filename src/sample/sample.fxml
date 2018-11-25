@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -8,9 +9,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CalculatorView">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CalculatorView">
    <children>
-      <Label fx:id="count_label" alignment="TOP_RIGHT" layoutX="57.0" layoutY="43.0" prefHeight="20.0" prefWidth="143.0" text="0" textAlignment="RIGHT">
+      <Label fx:id="count_label" alignment="TOP_RIGHT" layoutX="57.0" layoutY="43.0" prefHeight="20.0" prefWidth="143.0" text="0.0" textAlignment="RIGHT">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Label>
@@ -45,5 +46,7 @@
       <Button fx:id="button_multiply" layoutX="224.0" layoutY="138.0" mnemonicParsing="false" onMouseClicked="#onMultiplyButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Multiply" />
       <Button fx:id="button_divide" layoutX="224.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#onDivideButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Divide" />
       <Button fx:id="clear_button" layoutX="224.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#onClearButtonClicked" prefHeight="25.0" prefWidth="73.0" text="Clear" />
+      <Label layoutX="349.0" layoutY="63.0" prefHeight="17.0" prefWidth="51.0" text="History" />
+      <ComboBox fx:id="history_combo" layoutX="349.0" layoutY="86.0" prefWidth="150.0" />
    </children>
 </Pane>
